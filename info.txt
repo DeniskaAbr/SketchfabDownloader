@@ -1,0 +1,15 @@
+
+
+
+URL Generation
+    Parse URL and send data from pages to MongoDB
+
+
+Read data from MongoDB
+    check is "checked": true && "downloaded": true to get other data
+
+    if  "checked": false || "downloaded": false to parse data URl and get file links
+        save scene data as text field "SceneData" in MongoDB (replace)
+            Parse URLS from SceneData and send to Downloader mark  "checked": true
+                if Downloader no errors to mark this with field "downloaded": true
+                    repeat many times in cycle
